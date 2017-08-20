@@ -14,10 +14,10 @@ $ npm run serve:dev
 
 # Todo
 
-- [] Create Database Migrations
-- [] Create Database Models
-- [] Create Controllers
-- [] Create Pages
+- [ ] Create Database Migrations
+- [ ] Create Database Models
+- [ ] Create Controllers
+- [ ] Create Pages
 
 # Screenshots
 
