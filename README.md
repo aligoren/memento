@@ -2,6 +2,8 @@
 
 Memento is a CRM created with AdonisJS.
 
+**Status:** Dev
+
 # Run
 
 ```bash
