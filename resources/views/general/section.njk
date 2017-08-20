@@ -1,0 +1,123 @@
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <div class="user-info">
+                <div class="image">
+                    <img src="/assets/images/user.png" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
+                    <div class="email">john.doe@example.com</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">Menu</li>
+                <li ng-class="url == '' ? 'active' : ''">
+                    <a href="/" class="waves-effect waves-block">
+                        <i class="material-icons">home</i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'download' ? 'active' : ''">
+                    <a href="#/download" class="waves-effect waves-block">
+                        <i class="material-icons">file_download</i>
+                        <span>Customers</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'file-structure' ? 'active' : ''">
+                    <a href="#/file-structure" class="waves-effect waves-block">
+                        <i class="material-icons">chrome_reader_mode</i>
+                        <span>Sales</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'dependencies' ? 'active' : ''">
+                    <a href="#/dependencies" class="waves-effect waves-block">
+                        <i class="material-icons">developer_mode</i>
+                        <span>Safe</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'plugins' ? 'active' : ''">
+                    <a href="#/plugins" class="waves-effect waves-block">
+                        <i class="material-icons">widgets</i>
+                        <span>Stock</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'helper-classes' ? 'active' : ''">
+                    <a href="#/helper-classes" class="waves-effect waves-block">
+                        <i class="material-icons">layers</i>
+                        <span>Invoice</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'colors' ? 'active' : ''">
+                    <a href="#/colors" class="waves-effect waves-block">
+                        <i class="material-icons">color_lens</i>
+                        <span>Suppliers</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'javascript-options' ? 'active' : ''">
+                    <a href="#/javascript-options" class="waves-effect waves-block">
+                        <i class="material-icons">code</i>
+                        <span>Personnel</span>
+                    </a>
+                </li>
+
+                <li ng-class="url == 'browser-support' ? 'active' : ''">
+                    <a href="#/browser-support" class="waves-effect waves-block">
+                        <i class="material-icons">important_devices</i>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li ng-class="url == 'faq' ? 'active' : ''">
+                    <a href="#/faq" class="waves-effect waves-block">
+                        <i class="material-icons">question_answer</i>
+                        <span>Notes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="menu-toggle">
+                        <i class="material-icons">widgets</i>
+                        <span>Settings</span>
+                    </a>
+                    <ul class="ml-menu">
+                        <li ng-class="url == 'component-card' ? 'active' : ''">
+                            <a href="#/component-card">
+                                <span>Card</span>
+                            </a>
+                        </li>
+                        <li ng-class="url == 'component-infobox' ? 'active' : ''">
+                            <a href="#/component-infobox">
+                                <span>Infobox</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- #Menu -->
+        <!-- Footer -->
+        <div class="legal hidden">
+            <div class="copyright">
+                &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
+            </div>
+            <div class="version">
+                <b>Current Version: </b> 1.0.5
+            </div>
+        </div>
+        <!-- #Footer -->
+    </aside>
+    <!-- #END# Left Sidebar -->
+</section>
