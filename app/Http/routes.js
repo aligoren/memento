@@ -18,4 +18,5 @@
 const Route = use('Route')
 
 Route.get('/', 'HomeController.index');
-Route.get('/login', 'AuthenticationController.index')
+Route.get('/login', 'AuthenticationController.index');
+Route.post('/ajax/check_login', 'AuthenticationController.check_login');
