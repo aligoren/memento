@@ -3,7 +3,7 @@
 const crypto = use('crypto');
 
 const User = use('App/Model/User')
-
+const Hash = use('Hash')
 
 class AuthenticationController {
     * index(request, response) {
@@ -17,13 +17,10 @@ class AuthenticationController {
 
         const data = request.post();
 
-        const username = data.username;
-        const password = crypto
-                        .createHash('md5')
-                        .update(data.password)
-                        .digest('hex');
+        const username = request.input('username');
+        const password = request.input('password');
 
-        const logged_user = yield User.query()
+        /* const logged_user = yield User.query()
         .select('id', 'username')
         .where({
             'username': username,
@@ -40,9 +37,20 @@ class AuthenticationController {
                 isLogged: false,
                 user_details: 1,
             });
-        }
+        } */
         
-        response.json(returnData);
+
+        try {
+            const login = yield request.auth.attempt(username,password)
+            
+            if(login) {
+                return response.send(login)
+            } else {
+                return response.send("yok")
+            }
+        } catch (e) {
+            return response.unauthorized('Invalid credentails')
+        }
     }
 }
 
